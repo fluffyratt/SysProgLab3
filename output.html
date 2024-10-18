@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colored Kotlin Code</title>
+</head>
+<style>
+html {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 100%;
+}
+span {
+    white-space: pre-wrap;
+}
+</style>
+<body bgcolor="#282923">
+<span style='color:#B3AE60;'>fun</span><span style='color:#56A8F5;'> main</span><span style='color:#BCBEC4;'>()</span><span style='color:#56A8F5;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#B3AE60;'>val</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>name</span><span style='color:#BCBEC4;'>:</span><span style='color:#FA6675;'> </span><span style='color:#CF8E6D;'>String</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#6AAB73;'>"Kotlin"</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Hello, $name"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#7A7E85;'>// This is a comment</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#B3AE60;'>val</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>number</span><span style='color:#BCBEC4;'>:</span><span style='color:#FA6675;'> </span><span style='color:#CF8E6D;'>Int</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>42</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#B3AE60;'>if</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#cfd3d4;'>number</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>></span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>0</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Positive number"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#BCBEC4;'>}</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>else</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Non-positive number"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+</span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+
+</span><span style='color:#cfd3d4;'>import</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>kotlin</span><span style='color:#BCBEC4;'>.</span><span style='color:#cfd3d4;'>random</span><span style='color:#BCBEC4;'>.</span><span style='color:#cfd3d4;'>Random</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#B3AE60;'>fun</span><span style='color:#56A8F5;'> main</span><span style='color:#BCBEC4;'>()</span><span style='color:#56A8F5;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#B3AE60;'>var</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>playAgain</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>true</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>    </span><span style='color:#B3AE60;'>while</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#cfd3d4;'>playAgain</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>val</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>secretNumber</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>Random</span><span style='color:#BCBEC4;'>.</span><span style='color:#cfd3d4;'>nextInt</span><span style='color:#BCBEC4;'>(</span><span style='color:#2AACB8;'>1</span><span style='color:#BCBEC4;'>,</span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>101</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#7A7E85;'>// generate </span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>var</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>attempts</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>5</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>var</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>guessedCorrectly</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>false</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>        </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Вгадайте число від 1 до 100! У вас є $attempts спроб."</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>while</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#cfd3d4;'>attempts</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>></span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>0</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>&&</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>!</span><span style='color:#cfd3d4;'>guessedCorrectly</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#cfd3d4;'>print</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Введіть ваше число: "</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#B3AE60;'>val</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>userGuess</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#C77DBB;'>readLine</span><span style='color:#BCBEC4;'>()</span><span style='color:#FA6675;'>@@</span><span style='color:#BCBEC4;'>.</span><span style='color:#cfd3d4;'>toIntOrNull</span><span style='color:#BCBEC4;'>()</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>            </span><span style='color:#B3AE60;'>if</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#cfd3d4;'>userGuess</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>==</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>null</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Будь ласка, введіть дійсне число."</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#cfd3d4;'>continue</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>            </span><span style='color:#B3AE60;'>when</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#cfd3d4;'>userGuess</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'><</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>secretNumber</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>-></span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                    </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Занадто маленьке число!"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#cfd3d4;'>userGuess</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>></span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>secretNumber</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>-></span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                    </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Занадто велике число!"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#B3AE60;'>else</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>-></span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                    </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Вітаємо! Ви вгадали число!"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                    </span><span style='color:#cfd3d4;'>guessedCorrectly</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>true</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>            </span><span style='color:#cfd3d4;'>attempts</span><span style='color:#BCBEC4;'>--</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#B3AE60;'>if</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#BCBEC4;'>!</span><span style='color:#cfd3d4;'>guessedCorrectly</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>&&</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>attempts</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>></span><span style='color:#FA6675;'> </span><span style='color:#2AACB8;'>0</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>                </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Залишилось спроб: $attempts"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>if</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>(</span><span style='color:#BCBEC4;'>!</span><span style='color:#cfd3d4;'>guessedCorrectly</span><span style='color:#BCBEC4;'>)</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>{</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>            </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Ви програли! Загадане число було: $secretNumber"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>        </span><span style='color:#7A7E85;'>// Запитуємо, чи хоче користувач грати ще раз</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#cfd3d4;'>print</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Хочете зіграти ще раз? (так/ні): "</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#B3AE60;'>val</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>response</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#C77DBB;'>readLine</span><span style='color:#BCBEC4;'>()</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>        </span><span style='color:#cfd3d4;'>playAgain</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>response</span><span style='color:#BCBEC4;'>.</span><span style='color:#cfd3d4;'>equals</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"так"</span><span style='color:#BCBEC4;'>,</span><span style='color:#FA6675;'> </span><span style='color:#cfd3d4;'>ignoreCase</span><span style='color:#FA6675;'> </span><span style='color:#BCBEC4;'>=</span><span style='color:#FA6675;'> </span><span style='color:#B3AE60;'>true</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#FA6675;'>    </span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span><span style='color:#FA6675;'>    </span><span style='color:#C77DBB;'>println</span><span style='color:#BCBEC4;'>(</span><span style='color:#6AAB73;'>"Thanks for game!"</span><span style='color:#BCBEC4;'>)</span><span style='color:#BCBEC4;'>
+</span><span style='color:#BCBEC4;'>}</span><span style='color:#BCBEC4;'>
+
+</span></body>
+</html>

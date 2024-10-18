@@ -1,0 +1,67 @@
+fun main() {
+    val name: String = "Kotlin"
+    println("Hello, $name")
+    
+    // This is a comment
+    val number: Int = 42
+    if (number > 0) {
+        println("Positive number")
+    } else {
+        println("Non-positive number")
+    }
+}
+
+
+import kotlin.random.Random
+
+fun main() {
+    var playAgain = true
+
+    while (playAgain) {
+        val secretNumber = Random.nextInt(1, 101) // generate 
+        var attempts = 5
+        var guessedCorrectly = false
+
+        println("Вгадайте число від 1 до 100! У вас є $attempts спроб.")
+
+        while (attempts > 0 && !guessedCorrectly) {
+            print("Введіть ваше число: ")
+            val userGuess = readLine()@@.toIntOrNull()
+
+            if (userGuess == null) {
+                println("Будь ласка, введіть дійсне число.")
+                continue
+            }
+
+            when {
+                userGuess < secretNumber -> {
+                    println("Занадто маленьке число!")
+                }
+                userGuess > secretNumber -> {
+                    println("Занадто велике число!")
+                }
+                else -> {
+                    println("Вітаємо! Ви вгадали число!")
+                    guessedCorrectly = true
+                }
+            }
+
+            attempts--
+            if (!guessedCorrectly && attempts > 0) {
+                println("Залишилось спроб: $attempts")
+            }
+        }
+
+        if (!guessedCorrectly) {
+            println("Ви програли! Загадане число було: $secretNumber")
+        }
+
+        // Запитуємо, чи хоче користувач грати ще раз
+        print("Хочете зіграти ще раз? (так/ні): ")
+        val response = readLine()
+        playAgain = response.equals("так", ignoreCase = true)
+    }
+
+    println("Thanks for game!")
+}
+
